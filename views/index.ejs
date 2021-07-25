@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  <!-- 내려가면 집있거든요 그 집 위에서 주석쓰시고 얘기하죠 -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -68,8 +69,10 @@
    
 // 가능성이 보였다
 // 현타 집가서 구조좀 생각해봐야지 옴
+// 작동안됨 현타옴
 const getValueInput = () => {
-  let inputValue = document.getElementById("domTextElement").value;
+  // 이게 왜 null인데ㅠ
+  let inputValue = document.getElementById("domsextElement").value;
   let searchvalue = inputValue;
   let one = document.getElementById("indexTest").innerHTML = inputValue.indexOf(searchvalue, '이') + 2;
   let two = document.getElementById("indexTest").innerHTML = inputValue.indexOf(searchvalue, '김') + 3;
@@ -77,8 +80,9 @@ const getValueInput = () => {
   let four = document.getElementById("indexTest").innerHTML = inputValue.indexOf(searchvalue, '최') + 5;
   let five = document.getElementById("indexTest").innerHTML = inputValue.indexOf(searchvalue, '정') + 6;
   let six = document.getElementById("indexTest").innerHTML = inputValue.indexOf(searchvalue, '강') + 7;
-  let seven = document.getElementById("indexTest").innerHTML = inputValue.indexOf(searchvalue, '조') + 8;
+  let seven = document.getElementById("insexTest").innerHTML = inputValue.indexOf(searchvalue, '조') + 8;
   let eight = document.getElementById("indexTest").innerHTML = inputValue.indexOf(searchvalue, '윤') + 9;
+  let nine = document.getElementById("indexTest").innerHTML = inputValue.indexOf(searchvalue, '야옹') + 10;
   if (one == 2) {
       document.getElementById("valueInput").innerHTML = '우쒸';
   } else if(two == 3) {
@@ -95,23 +99,40 @@ const getValueInput = () => {
       document.getElementById("valueInput").innerHTML = '조씨';
   } else if(eight == 9) {
       document.getElementById("valueInput").innerHTML = '윤씨';
+  } else if(nine == 10) {
+      document.getElementById("valueInput").innerHTML = '야옹야옹야옹야옹';
   } else {
       document.getElementById("valueInput").innerHTML = '추가예정';
   }
   }
-  let str = 'abcabcabc';
-  let searchvalue = 'ab';
-  let pos = 0;
-  while (true) {
-  let foundPos = str.indexOf(searchvalue, pos);
-  if (foundPos == -1) break;
-  document.getElementById('meowmeowmeowmeow').innerHTML = foundPos;
-  pos = foundPos + 1;
-  }
+  // let str = 'abcabcabc';
+  // let searchvalue = 'ab';
+  // let pos = 0;
+  // while (true) {
+  // let foundPos = str.indexOf(searchvalue, pos);
+  // if (foundPos == -1) break;
+  // document.getElementById('meowmeowmeowmeow').innerHTML = foundPos;
+  // pos = foundPos + 1;
+  // }
  
 
 // 집을 부수러왔다. (╯°□°）╯︵ ┻━┻ 안대 끼에에에엑 안대 끼에에ㅔ에에에엑
 //                                ┻━┻
+
+//http://bodle.kro.kr:3001
+ // ?에서 그댜로 복붙함 ㅇㅎ 서버 오류떠서그렇네 ㅇㅎ
+//  ㅡㅡ
+ //
+//아니 주소가 다르잖아; 여기로 들가심됨 컨트롤 s누르면 바로 저장되서 실시간으로 적용됨
+//서버 끄고간듯 올때까지 그냥 코딩하시면 되유 보들이 만든거 망가트리지 않는선에서 암거나 하셔도댐
+// 읽기 전용이시네 음 저래도 되던가? 일단 해보시고 안되면 보들이올때까지 코드 구경하시거나
+// 건축하셔도댐
+// 이제 자유에유 암거나 하셔도댐
+// 그거 라이브쉐어 세션 들가셔서 그 카톡으로 보여드림 ㄱㄷ  
+// 머하심
+// 고라쿠먼
+//구경해요 서버열림
+//자야되네요 ㅂㅂ
               // ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ\\
             //                                                             \\
           //                                                                 \\
@@ -122,7 +143,7 @@ const getValueInput = () => {
 //                                                                                     \\
 // 이 밑 내 집 놀러오세여ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ \\ 
 //                                                                                       \\
-//                       ㅣㅡㅡㅡㅡㅣ          ㅣㅡㅡㅡㅡㅣ                                 \\
+//                       ㅣㅡㅡㅡㅡㅣ          ㅣㅡㅡㅡㅡㅣ                  헤으응         \\
 //                       ㅣ   ㅣ  ㅣ           ㅣ   ㅣ  ㅣ                                 \\ 
 //                       ㅣㅡㅡㅡㅡㅣ          ㅣㅡㅡㅡㅡㅣ                                 \\
 //                                                                                        \\
@@ -139,7 +160,7 @@ const getValueInput = () => {
 //  ㅣㅡㅡㅣ                                                                  ㅣㅡㅡㅡㅣ     \\
 //  ㅣㅡㅡㅣ                                                                  ㅣ  /  ㅣ      \\
 //  ㅣㅡㅡㅣ          ㅣㅡㅡㅡㅡㅣ                   같이 차 한잔 하시죠        ㅣ  \  ㅣ      \\
-//  ㅣㅡㅡㅣ          ㅣ       ㅣ                           구조 생각중        ㅣ     ㅣ       \\
+//  ㅣㅡㅡㅣ          ㅣ       ㅣ                보충제먹고 힘들어하는중        ㅣ     ㅣ       \\
 //  ㅣㅡㅡㅣ          ㅣ     ㅇㅣ                                             ㅣ     ㅣ       \\
 //  ㅣㅡㅡㅣ          ㅣ       ㅣ               ㅣ    ㅣㅡㅡㅡㅡㅣ    ㅣ        ㅣ     ㅣ       \\
 //  ㅣㅡㅡㅣ          ㅣ       ㅣ               ㅣㅡㅡㅣ        ㅣ ㅡㅢ         ㅣ     ㅣ       \\
@@ -229,8 +250,6 @@ const getValueInput = () => {
               <div id="meowmeowmeowmeow"></div>
             </div>
           </div>
-          <!-- </a> -->
-          
         </div>
         <!-- 도리꺼 -->
 

@@ -10,6 +10,9 @@ var querystring = require('querystring');
 const fs = require('fs')
 const multer = require("multer");
 
+const videoList_json_Update = require('./scripts/videoList_json_Update.js');
+const videoList_json_Add = require('./scripts/videoList_json_Add.js');
+
 const app = express();
 const server = http.createServer(app);
 const port = 3001 || process.env.port;
@@ -26,12 +29,8 @@ let videos = {
   '3-3': '윤이버셜_3'
 };
 
-const dataBuffer = fs.readFileSync('videoList.json')
-const dataJSON = dataBuffer.toString()
-const data = JSON.parse(dataJSON)
-
-console.log(data["videos"][0].id)
-
+//videoList_json_Update('videos', 0, "id", 1);
+videoList_json_Add('videos', '{"id": 6,"videoName": "윤이버셜_3","uploader": "보들","uploadTime": "*"}');
 
 app.get('/', (req, res) => {
   ClientIP = requestIp.getClientIp(req) // 요청한 클라이언트 아이피
