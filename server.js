@@ -7,7 +7,7 @@ const net = require('net');
 var requestIp = require('request-ip');
 const url = require('url');
 var querystring = require('querystring'); 
-
+const fs = require('fs')
 const multer = require("multer");
 
 const app = express();
@@ -25,6 +25,12 @@ let videos = {
   '3-2': '윤이버셜_2',
   '3-3': '윤이버셜_3'
 };
+
+const dataBuffer = fs.readFileSync('videoList.json')
+const dataJSON = dataBuffer.toString()
+const data = JSON.parse(dataJSON)
+
+console.log(data["videos"][0].id)
 
 
 app.get('/', (req, res) => {

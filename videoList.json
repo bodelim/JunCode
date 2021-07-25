@@ -1,0 +1,35 @@
+{
+    "amount": 5,
+    "videos": [
+        {
+            "id": 1,
+            "videoName": "파이_사과문",
+            "uploader": "보들",
+            "uploadTime": "*"
+        },
+        {
+            "id": 2,
+            "videoName": "도쿄올림픽_픽토그램",
+            "uploader": "보들",
+            "uploadTime": "*"
+        },
+        {
+            "id": 3,
+            "videoName": "윤이버셜_1",
+            "uploader": "보들",
+            "uploadTime": "*"
+        },
+        {
+            "id": 4,
+            "videoName": "윤이버셜_2",
+            "uploader": "보들",
+            "uploadTime": "*"
+        },
+        {
+            "id": 5,
+            "videoName": "윤이버셜_3",
+            "uploader": "보들",
+            "uploadTime": "*"
+        }
+    ]
+}
