@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  <!-- 내려가면 집있거든요 그 집 위에서 주석쓰시고 얘기하죠 -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -59,69 +60,51 @@
     
 
     <script type="text/javascript">
-
-  const sahonsmarblepices1 = '이로서 '
-
+  
       function move_VideoPlayer(){
         location.href = "/videoplayer"
       }
+  
 
-      //let function = fucktion;
-      //도대체 왜 이렇게 바꾸는거에여
-      //안되넹ㅎ
-       
-                        function isdolcute() {
-                          const yesdoliscute = document.getElementById('fact').innerHTML = sahonsmarblepices1 + sahonsmarblepices2 + sahonsmarblepices3;
-                          $('#check').hide();
-                          $('#check2').show();
-                        }
-                        function isdolcute2() {
-                          const yesisaidso = document.getElementById('fact').innerHTML = "그렇다니까"
-                          $('#check2').hide();
-                          $('#check').show();
-                        }
-
-                        function hide() {
-                          document.getElementById('check2').style.display = "none"
-                        }
-                        //같은코드
-                        function hide2() {
-                          $('#check').hide();
-                        }
-
-//   let inputValue = document.getElementById("domsextElement").value;
-//   let searchvalue = inputValue;
-//   let one = document.getElementById("indexTest").innerHTML = inputValue.indexOf(searchvalue, '이') + 2;
-//   let two = document.getElementById("indexTest").innerHTML = inputValue.indexOf(searchvalue, '김') + 3;
-//   let three = document.getElementById("indexTest").innerHTML = inputValue.indexOf(searchvalue, '박') + 4;
-//   let four = document.getElementById("indexTest").innerHTML = inputValue.indexOf(searchvalue, '최') + 5;
-//   let five = document.getElementById("indexTest").innerHTML = inputValue.indexOf(searchvalue, '정') + 6;
-//   let six = document.getElementById("indexTest").innerHTML = inputValue.indexOf(searchvalue, '강') + 7;
-//   let seven = document.getElementById("insexTest").innerHTML = inputValue.indexOf(searchvalue, '조') + 8;
-//   let eight = document.getElementById("indexTest").innerHTML = inputValue.indexOf(searchvalue, '윤') + 9;
-//   let nine = document.getElementById("indexTest").innerHTML = inputValue.indexOf(searchvalue, '야옹') + 10;
-//   if (one == 2) {
-//       document.getElementById("valueInput").innerHTML = '우쒸';
-//   } else if(two == 3) {
-//       document.getElementById("valueInput").innerHTML = '김씨';
-//   } else if(three == 4) {
-//       document.getElementById("valueInput").innerHTML = '박씨';
-//   } else if(four == 5) {
-//       document.getElementById("valueInput").innerHTML = '최씨';
-//   } else if(five == 6) {
-//       document.getElementById("valueInput").innerHTML = '정씨';
-//   } else if(six == 7) {
-//       document.getElementById("valueInput").innerHTML = '강씨';
-//   } else if(seven == 8) {
-//       document.getElementById("valueInput").innerHTML = '조씨';
-//   } else if(eight == 9) {
-//       document.getElementById("valueInput").innerHTML = '윤씨';
-//   } else if(nine == 10) {
-//       document.getElementById("valueInput").innerHTML = '야옹야옹야옹야옹';
-//   } else {
-//       document.getElementById("valueInput").innerHTML = '추가예정';
-//   }
-//   }
+   
+// 가능성이 보였다
+// 현타 집가서 구조좀 생각해봐야지 옴
+// 작동안됨 현타옴
+const getValueInput = () => {
+  // 이게 왜 null인데ㅠ
+  let inputValue = document.getElementById("domsextElement").value;
+  let searchvalue = inputValue;
+  let one = document.getElementById("indexTest").innerHTML = inputValue.indexOf(searchvalue, '이') + 2;
+  let two = document.getElementById("indexTest").innerHTML = inputValue.indexOf(searchvalue, '김') + 3;
+  let three = document.getElementById("indexTest").innerHTML = inputValue.indexOf(searchvalue, '박') + 4;
+  let four = document.getElementById("indexTest").innerHTML = inputValue.indexOf(searchvalue, '최') + 5;
+  let five = document.getElementById("indexTest").innerHTML = inputValue.indexOf(searchvalue, '정') + 6;
+  let six = document.getElementById("indexTest").innerHTML = inputValue.indexOf(searchvalue, '강') + 7;
+  let seven = document.getElementById("insexTest").innerHTML = inputValue.indexOf(searchvalue, '조') + 8;
+  let eight = document.getElementById("indexTest").innerHTML = inputValue.indexOf(searchvalue, '윤') + 9;
+  let nine = document.getElementById("indexTest").innerHTML = inputValue.indexOf(searchvalue, '야옹') + 10;
+  if (one == 2) {
+      document.getElementById("valueInput").innerHTML = '우쒸';
+  } else if(two == 3) {
+      document.getElementById("valueInput").innerHTML = '김씨';
+  } else if(three == 4) {
+      document.getElementById("valueInput").innerHTML = '박씨';
+  } else if(four == 5) {
+      document.getElementById("valueInput").innerHTML = '최씨';
+  } else if(five == 6) {
+      document.getElementById("valueInput").innerHTML = '정씨';
+  } else if(six == 7) {
+      document.getElementById("valueInput").innerHTML = '강씨';
+  } else if(seven == 8) {
+      document.getElementById("valueInput").innerHTML = '조씨';
+  } else if(eight == 9) {
+      document.getElementById("valueInput").innerHTML = '윤씨';
+  } else if(nine == 10) {
+      document.getElementById("valueInput").innerHTML = '야옹야옹야옹야옹';
+  } else {
+      document.getElementById("valueInput").innerHTML = '추가예정';
+  }
+  }
   // let str = 'abcabcabc';
   // let searchvalue = 'ab';
   // let pos = 0;
@@ -133,6 +116,23 @@
   // }
  
 
+// 집을 부수러왔다. (╯°□°）╯︵ ┻━┻ 안대 끼에에에엑 안대 끼에에ㅔ에에에엑
+//                                ┻━┻
+
+//http://bodle.kro.kr:3001
+ // ?에서 그댜로 복붙함 ㅇㅎ 서버 오류떠서그렇네 ㅇㅎ
+//  ㅡㅡ
+ //
+//아니 주소가 다르잖아; 여기로 들가심됨 컨트롤 s누르면 바로 저장되서 실시간으로 적용됨
+//서버 끄고간듯 올때까지 그냥 코딩하시면 되유 보들이 만든거 망가트리지 않는선에서 암거나 하셔도댐
+// 읽기 전용이시네 음 저래도 되던가? 일단 해보시고 안되면 보들이올때까지 코드 구경하시거나
+// 건축하셔도댐
+// 이제 자유에유 암거나 하셔도댐
+// 그거 라이브쉐어 세션 들가셔서 그 카톡으로 보여드림 ㄱㄷ  
+// 머하심
+// 고라쿠먼
+//구경해요 서버열림
+//자야되네요 ㅂㅂ
               // ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ\\
             //                                                             \\
           //                                                                 \\
@@ -166,16 +166,6 @@
 //  ㅣㅡㅡㅣ          ㅣ       ㅣ               ㅣㅡㅡㅣ        ㅣ ㅡㅢ         ㅣ     ㅣ       \\
 // 내 집임 놀러오세여ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ\\
 
-const cuties = () => {
-let chhma = cat; //khmer
-let cat = gato; //english
-let gato = kucing; //spanish
-let kucing = neko; //malay
-let neko = kat; //japanese
-let kat = goyangyi; //russian
-let goyangyi = mao; //korean
-let maoZedong = cute; //chinese
-}//마오쩌둥
 </script>
 
 
@@ -185,12 +175,12 @@ let maoZedong = cute; //chinese
       <div class="row row-cols-1 row-cols-md-4 g-4">
 
         <% for(var i = 0; i < videoList_json['amount']; i++){ %>
-        <div class="col-">  
-          <a href="<%= 'videoplayer?id=' + videoList_json['videos'][i].id %>">
+        <div class="col-">
+          <a href="videoplayer?id=<%= videoList_json['videos'][i].id %>">
           <div class="card h-100">
             <img src="<%= videoList_json['videos'][i].thumbnail %>" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title"><%= videoList_json['videos'][i].displayName.replace('.mp4', '').replace('.mov', '').replace('.avi', '') %></h5>
+              <h5 class="card-title"><%= videoList_json['videos'][i].videoName %></h5>
             </div>
           </div>
           </a>
@@ -198,21 +188,92 @@ let maoZedong = cute; //chinese
         </div>
         <% } %>
 
+        <!--
+        <div class="col-">
+          <a href="videoplayer?id=1">
+          <div class="card h-100">
+            <img src="img/thumbnail/파이_사과문_썸네일.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">[논란]파이 사과문</h5>
+            </div>
+          </div>
+          </a>
+        </div>
+        
+        <div class="col-">
+          <a href="videoplayer?id=2">
+          <div class="card h-100">
+              <div class="card-img-frame">
+            <img src="img/thumbnail/도쿄올림픽_픽토그램_썸네일.png" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">도쿄올림픽 픽토그램</h5>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="col-">
+          <a href="videoplayer?id=3-1">
+          <div class="card h-100">
+              <div class="card-img-frame">
+            <img src="img/thumbnail/윤이버셜_1_썸네일.png" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">윤이버셜 1</h5>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="col-">
+          <a href="videoplayer?id=3-2">
+          <div class="card h-100">
+              <div class="card-img-frame">
+            <img src="img/thumbnail/윤이버셜_2_썸네일.png" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">윤이버셜 2</h5>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="col-">
+          <a href="videoplayer?id=3-3">
+          <div class="card h-100">
+              <div class="card-img-frame">
+            <img src="img/thumbnail/윤이버셜_3_썸네일.png" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">윤이버셜 3</h5>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="col-"> -->
+          <!-- <a href="https://mosthandsomepart.netlify.com"> 
+          <div class="card h-100">
+              <div class="card-img-frame">
+            <img src="\img\K-jam.jpg.png" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <p id="valueInput">야옹야옹</p> 
+              <input type="text" id="domTextElement" >    
+              <button type="button"  onclick="getValueInput()">적용</button> 
+              <div id="meowmeowmeowmeow"></div>
+            </div>
+          </div>
+        </div>
+      -->
+
       </div>
     </div>
-
-    <button onclick="location.href='cardVideo_upload'">카드 영상 추가</button >
 
 
     <button onclick="location.href='img_upload'">이미지 업로드</button >
       <button onclick="location.href='video_upload'">영상 업로드</button >
-
-        
-                                            <div id="marbleofsahon">
-                                              <p id="fact"></p>
-                                              <button id="check" onclick="hide2()" style="display: block;">jQuery있음</button>
-                                              <button id="check2" onclick="hide()" style="display: block;">jQuery없음</button>
-                                            </div>
 
   
   
@@ -231,5 +292,6 @@ navBarToggle.addEventListener("click", function() {
 
 </script>
 
+<!-- 헤으응 -->
 
 </html>

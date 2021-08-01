@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+
+    <!-- Boot strap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+
+    <!-- style sheet -->
+    <link rel="stylesheet" href="./style.css" />
+    
+    
+
+    <script>
+    var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+        var toastList = toastElList.map(function (toastEl) {
+          return new bootstrap.Toast(toastEl, option)
+        })
+
+    if($("#set_videoName").val().length==0){ alert("영상의 이름을 적어주세요."); $("#set_videoName").focus(); return false; }
+    if($("#set_videoName").val().length>8){ alert("영상의 이름이 너무 깁니다 10글자 이하로 정해주세요."); $("#set_videoName").focus(); return false; }
+
+        </script>
+
+    <title>JunCode</title>
+</head>
+<body>
+
+    <!-- navigation bar -->
+  <nav class="navbar">
+    <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+    <a href="/" class="logo">JunCode</a>
+    <ul class="main-nav" id="js-menu">
+      <li>
+        <a href="/" class="nav-links">Home</a>
+      </li>
+      <li>
+        <a href="https://mosthandsomepart.netlify.com" class="nav-links">Login</a>
+      </li>
+      <li>
+        <a href="#" class="nav-links">Signup</a>
+      </li>
+      <li>
+        <a href="#" class="nav-links">info</a>
+      </li>
+    </ul>
+  </nav>
+
+
+  
+  <form method="post" enctype="multipart/form-data" action="/cardUpload/video">
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" id="set_videoName" name="set_videoName" placeholder="set_videoName" aria-label="Recipient's username" aria-describedby="button-addon2">
+    </div>
+    <div class="mb-3">
+    <input class="form-control" id="formFile" type="file" name="video">
+    <input type="submit" name="submit" value="업로드">
+    </form>
+    </div>
+
+
+  <!-- script -->
+  <script type="text/javascript">
+
+let mainNav = document.getElementById("js-menu");
+let navBarToggle = document.getElementById("js-navbar-toggle");
+
+navBarToggle.addEventListener("click", function() {
+  mainNav.classList.toggle("active");
+});
+
+</script>
+    
+</body>
+</html>
